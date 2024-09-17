@@ -12,6 +12,8 @@ import numpy as np
 import matplotlib
 from bs4 import BeautifulSoup
 from io import StringIO
+import lxml
+
 
 import os
 

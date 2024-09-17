@@ -6,3 +6,4 @@ requests
 matplotlib
 numpy
 beautifulsoup4
+lxml
