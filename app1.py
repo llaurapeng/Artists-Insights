@@ -59,6 +59,7 @@ st.markdown(f"<h2 style='text-align: center;font-size: 20px;'>Followers: {follow
 st.write ('-----')
 
 fig1 = create_data.track_viz (df)
+
 fig2 = create_data.loudness_viz (df)
 fig3 = create_data.popularity_viz (df)
 fig3 = create_data.circle(df)
@@ -76,7 +77,12 @@ with left:
 
     with c: 
         st.plotly_chart (fig1,use_container_width=True)
-
+        with st.expander (label = '**How are the musical features calculated?**'):
+            st.write ('**Acousticness:** A confidence measure from 0.0 to 1.0 of whether the track is acoustic. 1.0 represents high confidence the track is acoustic.')
+            st.write ('**Danceability:** Danceability describes how suitable a track is for dancing based on a combination of musical elements including tempo, rhythm stability, beat strength, and overall regularity. A value of 0.0 is least danceable and 1.0 is most danceable.')
+            st.write ('**Energy:** Energy is a measure from 0.0 to 1.0 and represents a perceptual measure of intensity and activity. Typically, energetic tracks feel fast, loud, and noisy. For example, death metal has high energy, while a Bach prelude scores low on the scale. Perceptual features contributing to this attribute include dynamic range, perceived loudness, timbre, onset rate, and general entropy.')
+            st.write ('**Instrumentalness:** Predicts whether a track contains no vocals. "Ooh" and "aah" sounds are treated as instrumental in this context. Rap or spoken word tracks are clearly "vocal". The closer the instrumentalness value is to 1.0, the greater likelihood the track contains no vocal content. Values above 0.5 are intended to represent instrumental tracks, but confidence is higher as the value approaches 1.0.')
+            st.write ('**Liveness:** Detects the presence of an audience in the recording. Higher liveness values represent an increased probability that the track was performed live. A value above 0.8 provides strong likelihood that the track is live.')
 
     l, c, c2, r = st.columns ([1,2,1.8,1])
 
