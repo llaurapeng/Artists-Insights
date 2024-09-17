@@ -2,8 +2,6 @@ import base64
 import requests
 from requests import post,get
 import json
-import spotipy
-from spotipy.oauth2 import SpotifyOAuth
 import streamlit as st
 import pandas as pd
 import plotly.express as px
@@ -14,7 +12,7 @@ import numpy as np
 import matplotlib
 from bs4 import BeautifulSoup
 from io import StringIO
-import spotipy
+
 import os
 
 
