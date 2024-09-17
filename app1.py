@@ -2,7 +2,7 @@
 import create_data
 import pandas as pd
 import streamlit as st
-import create_data_sp as create
+import create_data as create_data
 
 st.set_page_config(layout="wide")
 

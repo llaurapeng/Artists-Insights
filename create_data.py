@@ -297,9 +297,9 @@ def circle(df):
     # Remove x-tick labels
     ax.set_xticklabels([])
 
-    ax.set_title('Popularity By Songs', fontsize=30, pad=40, color = 'white',
+    ax.set_title('Popularity By Songs', fontsize=25, pad=40, color = 'white',
                  fontweight='bold',
-                 fontfamily='serif')
+                 fontfamily='Open Sans')
 
 
     ax.set_facecolor('white') 
