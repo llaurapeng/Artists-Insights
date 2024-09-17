@@ -1,7 +1,7 @@
+plotly
 spotipy
 streamlit 
 pandas
-plotly
 requests
 base64
 json
