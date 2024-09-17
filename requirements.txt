@@ -3,7 +3,6 @@ spotipy
 streamlit 
 pandas
 requests
-json
 matplotlib
 numpy
 beautifulsoup4
